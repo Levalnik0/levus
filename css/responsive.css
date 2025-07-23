@@ -1,0 +1,29 @@
+/* Адаптив для мобилок */
+@media (max-width: 768px) {
+    /* Гамбургер-меню */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Курсы */
+    .courses-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
